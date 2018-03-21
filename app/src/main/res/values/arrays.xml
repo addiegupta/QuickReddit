@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pref_sort_order_labels">
+        <item>@string/pref_sort_order_new_label</item>
+        <item>@string/pref_sort_order_hot_label</item>
+    </array>
+
+    <array name="pref_sort_order_values">
+        <item>@string/pref_sort_order_new_value</item>
+        <item>@string/pref_sort_order_hot_value</item>
+    </array>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_swipe_refresh_layout"
+    tools:context="com.example.android.quickreddit.ui.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tv_main_connection_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_internet_connection"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_main_empty_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:text="@string/no_subreddits_saved_main"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_main_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/error_fetching_data"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main_threads"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp" />
+    </FrameLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/main_ad_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"/>
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

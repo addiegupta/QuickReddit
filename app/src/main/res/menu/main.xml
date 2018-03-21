@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:orderInCategory="1"
+        android:id="@+id/menu_subreddits_action"
+        android:title="@string/saved_subreddits"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="1"
+        android:id="@+id/menu_settings_action"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+</menu>

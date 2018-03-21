@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="@string/pref_sort_order_new_value"
+        android:entries="@array/pref_sort_order_labels"
+        android:entryValues="@array/pref_sort_order_values"
+        android:key="@string/pref_sort_order_key"
+        android:title="@string/pref_sort_order_label"/>
+    <Preference
+        android:title="@string/clear_saved_subreddits"
+        android:key="@string/clear_saved_subreddits_button"/>
+
+</PreferenceScreen>

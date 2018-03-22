@@ -19,37 +19,39 @@ Following is the document made as part of planning the development of the app
 ○ Displays comments, images and details from threads
 ○ Handles external links in threads
 
+• Main Activity
+
 The MainActivity fetches a list of Reddit posts from the saved subreddits and displays them. Each post item displays the name of the subreddit, the title of the thread and an image associated with the post (if any).
 Selecting the overflow menu displays the option to open the SettingsActivity or the activity to display and edit the saved subreddits (SubredditActivity). A layout for the same on a tablet is shown below the mobile device layout.
 
-Detail Activity
+• Detail Activity
 
 The DetailActivity is launched by selecting a Reddit Thread from the MainActivity. 
 It displays the image on the MainActivity item in larger size (if any). The subreddit title and the title of the thread are also visible along with the extra text associated with the thread.
 A thread may often have an external link which can be viewed using the “Open External Link” button.
 The comments and its replies are shown below the information from the post.
 
-
-Subreddits Activity
-
+• Subreddits Activity
 
 This activity displays the saved subreddits to fetch posts from. Clicking on an item removes it from the list. 
 The floating action button fetches trending subreddits and displays a list. Clicking on an item now removes or adds the subreddit to the list depending on its existence in the list.
 Subreddits can also be searched for using the search option in the menu bar.
-Settings Activity
+
+
+• Settings Activity
 
 
 The SettingsActivity displays preferences that can be changed e.g. sort order preference out of hot/new.
 
 
-App Widget
-
+• App Widget
 
 The widget loads a list of threads using the Reddit API and displays it. The title of the thread & the subreddit and the score of the thread are displayed in the widget. Selecting a thread launches the DetailActivity for the selected thread.
-Technical Tasks
+
+• Technical Tasks
+
 Loader to move data to views
 The list of subreddits stored in the database is retrieved using a loader and then displayed in a RecyclerView in the SubredditsActivity.
-
 AsyncTask to perform background tasks
 As the Volley library handle network requests in a better way than AsyncTask, Volley shall be used for network tasks. AsyncTask shall be used to query the Subreddits database when a search for new subreddits is carried out. The task shall then query the database for each item and check if it already exists in the database, then it shall be marked as saved, if it exists.
 

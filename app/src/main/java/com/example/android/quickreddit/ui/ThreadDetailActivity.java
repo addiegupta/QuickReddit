@@ -22,7 +22,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
@@ -30,6 +29,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
 import com.example.android.quickreddit.R;
 import com.example.android.quickreddit.adapter.CommentAdapter;
+import com.example.android.quickreddit.extra.GlideApp;
 import com.example.android.quickreddit.extra.WebViewLinkHandler;
 import com.example.android.quickreddit.model.Comment;
 import com.example.android.quickreddit.model.Thread;
@@ -165,7 +165,8 @@ public class ThreadDetailActivity extends AppCompatActivity {
                     .placeholder(R.drawable.reddit_placeholder)
                     .error(R.drawable.reddit_placeholder);
 
-            Glide.with(this)
+
+            GlideApp.with(this)
                     .load(imageUrl)
                     .thumbnail(0.1f)
                     .apply(options)
@@ -186,6 +187,8 @@ public class ThreadDetailActivity extends AppCompatActivity {
                         }
                     })
                     .into(mImageView);
+
+
 
         } else {
             mImageView.setImageResource(R.drawable.reddit_placeholder);

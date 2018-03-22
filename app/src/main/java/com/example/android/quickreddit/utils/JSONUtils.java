@@ -128,7 +128,9 @@ public final class JSONUtils {
             JSONArray images = preview.getJSONArray(IMAGES);
             JSONObject image = images.getJSONObject(0);
             JSONObject source = image.getJSONObject(SOURCE);
-            imageUrl = source.getString(URL);
+//            imageUrl = source.getString(URL);
+            imageUrl = correctHtmlText(source.getString(URL));
+
         } catch (JSONException e) {
             e.printStackTrace();
             FirebaseCrash.report(e);

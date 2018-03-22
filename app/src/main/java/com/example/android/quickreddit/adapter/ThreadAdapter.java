@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.android.quickreddit.R;
+import com.example.android.quickreddit.extra.GlideApp;
 import com.example.android.quickreddit.model.Thread;
 import com.google.firebase.crash.FirebaseCrash;
 
@@ -66,7 +66,7 @@ public class ThreadAdapter extends RecyclerView.Adapter<ThreadAdapter.ThreadAdap
                         .placeholder(R.drawable.reddit_placeholder)
                         .error(R.drawable.reddit_placeholder);
 
-                Glide.with(mContext)
+                GlideApp.with(mContext)
                         .load(thumbnailUrl)
                         .apply(options)
                         .thumbnail(0.1f)

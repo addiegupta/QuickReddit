@@ -133,3 +133,12 @@ Task 7: Finishing Touches
 • Manage resources properly (remove resources that are not required, keep strings in a resource file etc.)
 • Clean up code removing unnecessary classes and functions
 • Clean project and submit 
+
+##Screenshots
+
+![screenshot_20180322-171601](https://user-images.githubusercontent.com/22665789/37769345-bc4c5ef8-2df6-11e8-890a-2d64ddbff80e.png)
+![screenshot_20180322-171606](https://user-images.githubusercontent.com/22665789/37769346-bc8b061c-2df6-11e8-860d-d49526d95441.png)
+![inkedscreenshot_20180322-171537_li](https://user-images.githubusercontent.com/22665789/37769349-bcdaf19a-2df6-11e8-940c-b72bdbf420b9.jpg)
+![screenshot_20180322-171328](https://user-images.githubusercontent.com/22665789/37769351-bd92e2a0-2df6-11e8-8ad4-25ab7a1ed4ae.png)
+![screenshot_20180322-171341](https://user-images.githubusercontent.com/22665789/37769352-be7f052c-2df6-11e8-85de-3d3802903310.png)
+![screenshot_20180322-171414](https://user-images.githubusercontent.com/22665789/37769354-bed16eca-2df6-11e8-8402-7a5911f843fd.png)

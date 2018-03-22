@@ -1,15 +1,15 @@
 # QuickReddit
 A reddit app for Android to fetch threads from your favourite subreddits!
 
+• Quick Reddit aims to simplify the Reddit reading experience for a user interested in a number of  subreddits. It prevents the posts from less active subreddits from getting neglected giving equal space to all subreddits
+
+• Quick Reddit is intended for Reddit users who subscribe to a large number of subreddits and find it difficult to view all of them. It fetches posts from the subreddits and displays them so that posts from all subreddits can be seen.
+
+
 
 This app was made as part of the final Capstone project in the Android Developer Nanodegree by Udacity. 
 
 Following is the document made as part of planning the development of the app
-
-• Quick Reddit aims to simplify the Reddit reading experience for a user interested in a number of  subreddits. It prevents the posts from less active subreddits from getting neglected giving equal space to all subreddits
-
-
-• Quick Reddit is intended for Reddit users who subscribe to a large number of subreddits and find it difficult to view all of them. It fetches posts from the subreddits and displays them so that posts from all subreddits can be seen.
 
 # Features
 
